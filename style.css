@@ -1,0 +1,342 @@
+/* Common Code */
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Nunito Sans', sans-serif;
+}
+p{
+    margin-bottom: 0;
+}
+:root{
+    --primary-color: rgb(255, 77, 41);
+    --padding: 1% 5%;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+/* font-family: 'Italianno', cursive;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+/* Common Code */
+
+/* Header Section Starts Here */
+.upper-nav{
+    background-color: var(--primary-color);
+    color: white;
+    padding: 7px 0;
+}
+.icon-style{
+    color: white;
+    padding: 5px;
+    background-color: rgba(238, 162, 20, 0.643);
+    margin-right: 2px;
+}
+.icon-style:hover{
+    background-color: white;
+    color: var(--primary-color);
+}
+
+#upper-nav{
+    background-color: var(--primary-color);
+    padding: 1% 5%;
+}
+
+.container-fluid{
+    padding: var(--padding);
+}
+.brand-style{
+    font-size: 25px;
+}
+
+.text-color:hover{
+    color: var(--primary-color);
+}
+.btn-style{
+    background-color: var(--primary-color);
+    color: white;
+    padding: 6px;
+    width: 100px;
+}
+.btn-style:hover{
+    color: white;
+}
+/* Header Section End Here */
+
+/* Banner Section Starts Here */
+
+.height-u{
+    height: 85vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./Photos/bg_banner1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+.height-uu{
+    height: 85vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./Photos/bg_banner2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+.caro1{
+    padding: 0 15%;
+}
+.large h1{
+    font-size: 50px;
+}
+.btn-work{
+    border: 1px solid white;
+    color: white;
+    transition: .2s;
+}
+.btn-work:hover{
+    background-color: white;
+    color: black;
+}
+.ban-icon{
+    background-color: rgba(255, 255, 255, 0.477);
+    color: black;
+    font-size: 14px;
+    padding: 10px;
+    transition: .2s;
+}
+.ban-icon:hover{
+    background-color: var(--primary-color);
+    color: white;
+}
+/* Banner Section Ends Here */
+
+
+/* About Section Starts Here */
+#about{
+    padding: var(--padding);
+    padding-top: 100px;
+    padding-bottom: 90px;
+    min-height: 100vh;
+}
+.about-card-icon{
+    width: 85px;
+    height: auto;
+}
+.iim{
+    width:390px;
+    height: auto;
+}
+/* About Section Ends Here */
+
+/* Works Section Starts Here */
+#work{
+    background: linear-gradient(rgba(255, 77, 41, 0.85), rgba(255, 77, 41, 0.85)), url(./Photos/bg_banner1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: var(--padding);
+    min-height: 40vh;
+}
+.work-item h1{
+    font-size: 45px;
+}
+
+/* Works Section Ends Here */
+
+
+/* Service Section Starts Here */
+#service{
+    padding: var(--padding);
+}
+.service-text h6{
+    color: var(--primary-color);
+}
+.intro{
+    width: 50%;
+    margin-top: 50px;
+}
+.intro h6{
+    color: var(--primary-color);
+}
+.card-img-style{
+    width: 90px;
+    height: auto;
+}
+.card{
+    transition: .3s;
+}
+.card:hover{
+    box-shadow: 2px 2px 4px black;
+    transform: scale(1.01);
+}
+
+/* Service Section Ends Here */
+
+/* Team Section Starts Here */
+#team{
+    padding: var(--padding);
+}
+
+.team-card{
+    box-shadow: none;
+    border: none;
+}
+.team-card:hover{
+    box-shadow: none;
+    transform: none;
+}
+
+.image-container{
+    position: relative;
+}
+.team-image{
+    opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.middle{
+    transition: all 0.4s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(255, 77, 41, 0.4), rgba(255, 77, 41, 0.4));
+}
+
+.image-container:hover .team-image{
+    opacity: 0.3;
+}
+
+.image-container:hover .middle{
+    opacity: 1;
+}
+.middle-icon{
+    color: black;
+    font-size: 20px;
+    margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0.255);
+    padding: 8px;
+    border-radius: 50%;
+    transition: .3s;
+}
+.middle-icon:hover{
+    background-color: white;
+    color: var(--primary-color);
+}
+/* Team Section Ends Here */
+
+/* Review Section Starts Here */
+#review{
+    padding: var(--padding);
+    min-height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./Photos/bg_banner1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.review-image{
+    width: 100px;
+    height: auto;
+}
+#review .carousel-inner{
+    padding: 10% 10%;
+}
+.review-gold{
+    color: var(--primary-color);
+}
+table td i{
+    color: var(--primary-color);
+}
+
+/* Review Section Ends Here */
+
+/* Blog Section Starts Here */
+#blog{
+    padding: var(--padding);
+    min-height: vh;
+}
+.card-head-blog{
+    position: relative;
+}
+.bad-web{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: var(--primary-color);
+    border-radius: 50px;
+    color: white;
+    width: 100px;
+}
+.date-p{
+    color: var(--primary-color);
+    text-decoration: underline;
+    font-size: 14px;
+}
+.blog-card:hover{
+    box-shadow: none;
+    transform: none;
+}
+/* Blog Section Ends Here */
+/* 
+Footer Section Starts Here  */
+footer{
+    min-height: 40vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./Photos/bg_banner1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 8% 0 4% 0;
+}
+.foot-icon{
+    background-color: rgba(255, 255, 255, 0.446);
+    font-size: 18px;
+    padding: 15px;
+    transition: .3s;
+}
+.foot-icon:hover{
+    background-color: white;
+    color: var(--primary-color);
+}
+/* 
+Footer Section Ends Here  */
+
+@media screen and (max-width:768px) {
+    .large h1{
+        font-size: 40px;
+    }
+    .ban-icon{
+        visibility: hidden;
+    }
+    #about{
+        flex-direction: column;
+    }
+    .about-img{
+        margin-top: 50px;
+    }
+    .iim{
+        width:100%;
+    }
+    .intro{
+        width: 100%;
+    }
+}
